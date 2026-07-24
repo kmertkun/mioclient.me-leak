@@ -1,0 +1,94 @@
+@import "styles.css";
+
+:root {
+    --alpha: 1;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: var(--alpha);
+    transition: opacity 300ms;
+}
+
+.modal {
+    padding: 0px;
+    background: none;
+    border: none;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.popup-base {
+    background-color: var(--bg-light);
+    border-radius: 6px;
+    overflow-y: hidden;
+}
+
+.popup-header {
+    margin: 0px;
+    margin-top: 16px;
+    font-weight: normal;
+}
+
+.popup-text {
+    padding: 16px;
+    max-width: 500px;
+}
+
+.popup-inner {
+    margin: 0px;
+}
+
+.popup-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 500px;
+    padding: 16px;
+}
+
+.popup-btn {
+    margin-left: 8px;
+}
+
+.bolder {
+    font-weight: 600;
+}
+
+.captcha-modal {
+    top: 0;
+    bottom: 0;
+
+    z-index: 100;
+}
+
+.captcha-modal + .backdrop {    
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: var(--alpha);
+    transition: opacity 300ms;
+
+    z-index: 99; 
+}
+
+@media screen and (max-device-width: 650px){
+
+    .popup-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding: 16px;
+    }
+
+    .popup-btn {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Contact - Mio
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<script async src="https://www.recaptcha.net/recaptcha/api.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/login.css" />
+    <style>
+        #details-input {
+            resize: vertical;
+            max-height: 350px;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #social {
+            padding: 0px 4px;
+            transition: 500ms ease;
+        }
+
+        #social:hover {
+            letter-spacing: 2px;
+            color: var(--text-second);
+        }
+
+        #social:last-child {
+            margin: 6px;
+            flex-basis: 100%;
+            text-align: center;
+        }
+    </style>
+    </head>
+
+<body>
+    
+        <nav class="nav scrollable">
+        <a style="color: var(--text-active);" class="nav-item nav-container" href="\">
+            mioclient<span style="color: var(--text-second);">.me</span>
+        </a>
+        <div class="nav-container nav-hidable">
+            <a class="nav-item nav-sub" href="/changelogs">
+                changelogs
+            </a>
+
+            <a class="nav-item nav-sub" href="/discord">
+                discord
+            </a>
+
+            <a class="nav-item nav-sub nav-btn" href="/dashboard">
+                dashboard
+            </a>
+        </div>
+    </nav>
+    
+    <form class="login-box" method="POST">
+        <div class="login-container">
+            <h1 style="color: var(--text-second); margin: 0.5rem;">
+
+                            Contact
+            
+            </h1>
+			            
+        <input name="email" type="email" class="login-item" required placeholder="Email">
+        <input name="topic" type="text" class="login-item" required placeholder="Topic">
+        <textarea rows="4" cols="50" name="details" type="text" class="login-item" id="details-input" required placeholder="Details"></textarea><div class="g-recaptcha" data-sitekey="6Le-JDMpAAAAAPCHnr9ar6U6BC3ydU9WfnCdggTD" data-theme="dark"></div><input type="submit" class="login-item main-btn" value="Submit">        </div>
+    </form>
+    <p style="display: flex; justify-content: center; color: gray; margin: 8px;"> or </p>
+		<div class="socials">
+        <a id="social" target="_blank" href="https://www.youtube.com/@mioclient">youtube</a>
+        <a id="social" target="_blank" href="/discord">discord</a>
+        <a id="social" target="_blank" href="/cdn-cgi/l/email-protection#a6c5c9c8d2c7c5d2e6cbcfc9c5cacfc3c8d288cbc3"><span class="__cf_email__" data-cfemail="11727e7f65707265517c787e727d78747f653f7c74">[email&#160;protected]</span></a>
+		</div>
+        <div style="display: flex; justify-content: center; color: gray; margin: 1rem;">
+            <p style="color: #888; font-size: 0.8rem; text-align: center;">
+                ФОП Маройка Костянтин Юрійович | ІПН 3893616271 <br>
+                Зв'язок: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d9bab6b7adb8baad99b4b0b6bab5b0bcb7adf7b4bc">[email&#160;protected]</a>
+            </p>
+        </div>
+        
+    
+        <footer>
+            <p> Copyright © 2026 Mio </p>
+            <div class="footer-info">
+                <a class="footer-element" href="/support"> Contact </a>
+                <a class="footer-element" href="/privacy"> Privacy Policy </a>
+                <a class="footer-element" href="/tos"> Terms of Service </a>
+                <a class="footer-element" href="/assets/oferta.pdf"> Legal Info </a>
+            </div>
+        </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+</html>

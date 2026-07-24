@@ -1,0 +1,102 @@
+@import "login.css";
+
+h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+i {
+    margin-right: 2px;
+}
+
+.radio-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-card {
+    margin: 4px 8px;
+
+    background-color: var(--bg);
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: var(--bg);
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+.radio-box, .radio-box * {
+    cursor: pointer;
+}
+
+.radio-selected {
+    border-color: var(--text);
+    transition: ease-in-out 200ms;
+}
+
+.radio-disabled {
+    filter: brightness(80%);
+    transition: ease-in-out 500ms;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.bbx {
+    margin-top: 20vh;
+}
+
+.popup-email {
+    width: 80%;
+}
+
+.popup-action {
+    margin: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.alternative {
+    text-align: center;
+    font-weight: 500;
+    opacity: .9;
+}
+
+.g-recaptcha {
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-device-width: 650px){
+    .radio-box {
+        flex-direction: column;
+        flex-grow: 100;
+        flex-grow: 1;
+        align-items: normal;
+        width: 100%;
+    }
+
+    .bbx {
+        margin-top: 0vh;
+    }
+
+    h3 {
+        justify-content: center;
+    }
+
+}

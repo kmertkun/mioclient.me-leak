@@ -1,0 +1,79 @@
+@import "styles.css";
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+
+    background-color: var(--bg-light);
+    border-radius: 8px;
+}
+
+
+.login-item {
+    margin: .5rem;
+    background-color: var(--bg);
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 8px;
+    border-width: 1px;
+    width: 100%;
+
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    transition: all .25s ease-out;
+    
+    outline: none;
+    cursor: text;
+}
+
+.login-item:focus {
+    border-color: var(--text-second);
+}
+
+.login-item[type=submit] {
+    cursor: pointer;
+    border-color: var(--text-second);
+    width: auto;
+}
+
+.login-item::placeholder {
+    font-size: 1rem;
+}
+
+#tos {
+    vertical-align: middle; 
+    padding: 0.5rem;
+    appearance: none;
+    cursor: pointer;    
+    background-color: var(--bg);
+    transition: all .25s ease-out;
+
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: var(--text-second);
+}
+
+#tos:checked {    
+    background-color: #FC315D40;
+}
+
+#tos-text {
+    vertical-align: middle;
+    font-size: 1rem;
+}
+.error {
+    margin: 0px 0px 0.67em 0;
+    color: red;
+}
