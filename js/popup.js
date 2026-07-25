@@ -1,4 +1,4 @@
-function $(x) {
+﻿function $(x) {
     if (x.startsWith(".")) {
         return document.getElementsByTagName("x")[0];
     }

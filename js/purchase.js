@@ -1,4 +1,4 @@
-let clicked2 = false;
+﻿let clicked2 = false;
 
 var noCaptcha = false;
 var noEmail = false;

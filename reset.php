@@ -1,15 +1,15 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-        <head>
+	    <head>
         <title>
-            Login - Mio
+            Password Recovery - Mio
         </title>
         <script async src="https://www.recaptcha.net/recaptcha/api.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="/css/login.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/login.css" /> 
             </head>
     <body>
-       
+        
         <nav class="nav scrollable">
         <a style="color: var(--text-active);" class="nav-item nav-container" href="\">
             mioclient<span style="color: var(--text-second);">.me</span>
@@ -30,25 +30,12 @@
     </nav>
             <form class="login-box" method="post" action="">
             <h1 style="color: var(--text-second);">
-
-                            Login
-            
+                Password recovery
             </h1>
                         <div class="login-container">
-                <input name="login" type="text" class="login-item" required placeholder="Username">
-                <input name="password" type="password" class="login-item" required placeholder="Password">
-				<div class="g-recaptcha" data-sitekey="6Le-JDMpAAAAAPCHnr9ar6U6BC3ydU9WfnCdggTD" data-theme="dark"></div>                <input type="submit" class="login-item main-btn" value="Login">
+                <input name="address" type="email" class="login-item" required placeholder="Email">
+                <div class="g-recaptcha" data-sitekey="6Le-JDMpAAAAAPCHnr9ar6U6BC3ydU9WfnCdggTD" data-theme="dark"></div>                <input type="submit" class="login-item main-btn" value="Send">
             </div>
-            <h4 style="margin-bottom: 0;">
-
-                            Don't have an account? <a style="color: var(--text-second);" href="/register"> Sign Up </a>
-                            
-            </h4>
-            <h4 style="margin-top: 0.5rem;">
-
-                            Forgot your password? <a style="color: var(--text-second);" href="/reset"> Click here </a>
-            
-            </h4>
         </form>
         
         <footer>

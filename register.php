@@ -1,15 +1,23 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-        <head>
+	    <head>
         <title>
-            Login - Mio
+            Register - Mio
         </title>
         <script async src="https://www.recaptcha.net/recaptcha/api.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="/css/login.css" /> 
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+        <link rel="stylesheet" type="text/css" href="css/login.css" />
+        <script>
+                document.addEventListener("DOMContentLoaded", function(event) { 
+                        const params = new URLSearchParams(document.location.search);
+                        if (params.has("code")) {
+                                document.getElementById("regcode").value = params.get("code")
+                        }
+                });
+        </script>
             </head>
     <body>
-       
+        
         <nav class="nav scrollable">
         <a style="color: var(--text-active);" class="nav-item nav-container" href="\">
             mioclient<span style="color: var(--text-second);">.me</span>
@@ -31,23 +39,35 @@
             <form class="login-box" method="post" action="">
             <h1 style="color: var(--text-second);">
 
-                            Login
+                            Sign Up
             
             </h1>
                         <div class="login-container">
                 <input name="login" type="text" class="login-item" required placeholder="Username">
                 <input name="password" type="password" class="login-item" required placeholder="Password">
-				<div class="g-recaptcha" data-sitekey="6Le-JDMpAAAAAPCHnr9ar6U6BC3ydU9WfnCdggTD" data-theme="dark"></div>                <input type="submit" class="login-item main-btn" value="Login">
+                <input name="email" type="email" class="login-item" required placeholder="Email (confirmation required)">
+                <input id="regcode" name="invite" type="text" class="login-item" required placeholder="Registration code">
+                <div style="margin-bottom: 0.5rem;">
+                    <input type="checkbox" value="1" required id="tos"> 
+                    <label for="tos" id="tos-text">
+
+                                    I agree to the
+                        <a style="color: var(--text-second);" href="/tos"> Terms of Service</a>
+                
+                    </label>
+                </div>
+
+                <div class="g-recaptcha" data-sitekey="6Le-JDMpAAAAAPCHnr9ar6U6BC3ydU9WfnCdggTD" data-theme="dark"></div>                <input type="submit" class="login-item main-btn" value="Sign Up">
             </div>
-            <h4 style="margin-bottom: 0;">
+            <h4 style="margin-bottom: 1px;">
 
-                            Don't have an account? <a style="color: var(--text-second);" href="/register"> Sign Up </a>
-                            
+                                    Already have an account? <a style="color: var(--text-second);" href="/login"> Log in </a>
+                
             </h4>
-            <h4 style="margin-top: 0.5rem;">
+            <h4 style="margin: 1px; padding-top: 1px">
 
-                            Forgot your password? <a style="color: var(--text-second);" href="/reset"> Click here </a>
-            
+                                    Don't have a registration code? <a style="color: var(--text-second);" href="/purchase"> Click here </a>
+                
             </h4>
         </form>
         
